@@ -2,13 +2,16 @@
 <html>
 <head>
   <title>PracticeApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+  <!-- Note: I cut out the following from both stylesheet_link_tag and javastript_include_tag -->
+  <!-- 'data-turbolinks-track' => true -->
 </head>
 <body>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
